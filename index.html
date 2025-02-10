@@ -7,16 +7,22 @@
     <style>
         
         html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: #000;
+body{
+  background-color: black;
+}
+
+
+.text {
+   color: white;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   margin-top: 250px;
+}
+
+.button {
+  text-align: center;
+  margin-top: 50px;
 }
 
 .glow-on-hover {
@@ -34,7 +40,8 @@ body {
 
 .glow-on-hover:before {
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg, #0000ff, #7a00ff, #b300ff, #d200ff, #ff00e4, #ff00c8, #ff008c, #ff0050, #0000ff);
+
     position: absolute;
     top: -2px;
     left:-2px;
@@ -83,8 +90,14 @@ body {
     </style>
 </head>
 <body>
-    <title>Yugen Deferred Pack</title> 
-    <p>This is a experience you will never forget!</p>
-    <button class="glow-on-hover" class="button">Download</button>
+    <div class="text">
+      <title>Yugen Deferred Pack</title> 
+      <p>This is a experience you will never forget!</p>
+    </div>
+    
+    <div class="button">
+      <button class="glow-on-hover">Download</button>
+    </div>
+      
 </body>
 </html>
